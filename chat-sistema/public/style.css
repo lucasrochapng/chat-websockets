@@ -1,0 +1,148 @@
+/* Estilo geral */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e2f;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Tela de seleção de sala */
+#room-container {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#titles {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo do Título e Descrição */
+#titles h1 {
+    font-size: 2rem;
+    color: #ff6f61;
+    margin-bottom: 10px;
+}
+
+#titles p {
+    font-size: 1rem;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+    text-align: center;
+    max-width: 300px;
+}
+
+#room-select, #username-input {
+    background-color: #2b2b3c;
+    color: #ffffff;
+    border: 1px solid #3d3d5c;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#join-btn {
+    background-color: #ff6f61;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Tela do chat */
+#chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+}
+
+#leave-btn {
+    align-self: flex-start;
+    background-color: #606060;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+#messages {
+    background-color: #2b2b3c;
+    border: 1px solid #3d3d5c;
+    border-radius: 5px;
+    width: 100%;
+    height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Bolhas de mensagem */
+.message-bubble {
+    max-width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    position: relative;
+    display: inline-block;
+}
+
+/* Estilo das mensagens do próprio usuário */
+.user-message {
+    background-color: #4a90e2;
+    color: #ffffff;
+    align-self: flex-end;
+}
+
+/* Estilo das mensagens de outros usuários */
+.other-message {
+    background-color: #606060;
+    color: #ffffff;
+    align-self: flex-start;
+}
+
+/* Estilo do horário da mensagem */
+.message-time {
+    font-size: 0.7rem;
+    color: #cccccc;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+/* Estilo do input e do botão para enviar */
+#message-input-container {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+}
+
+#message-input {
+    flex-grow: 1;
+    background-color: #2b2b3c;
+    color: #ffffff;
+    border: 1px solid #3d3d5c;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+#send-btn {
+    background-color: #ff6f61;
+    color: #ffffff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}

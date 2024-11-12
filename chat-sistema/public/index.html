@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat em Tempo Real</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <div id="titles">
+        <h1>Bem-vindo ao Chat</h1>
+        <p>Entre em uma sala de conversa para começar a interagir com outras pessoas em tempo real.</p>
+    </div>
+
+    <!-- Tela de Seleção de Sala -->
+    <div id="room-container">
+        <!-- <label for="room-select">Salas:</label> -->
+        <select id="room-select">
+            <option>Sala 1</option>
+            <option>Sala 2</option>
+            <option>Sala 3</option>
+        </select>
+        <input id="username-input" type="text" placeholder="Nome">
+        <button id="join-btn">Entrar na Sala</button>
+    </div>
+
+    <!-- Tela do Chat -->
+    <div id="chat-container">
+        <button id="leave-btn">Voltar</button>
+        <div id="messages"></div>
+        <div id="message-input-container">
+            <input id="message-input" type="text" placeholder="Digite sua mensagem">
+            <button id="send-btn">Enviar</button>
+        </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/client.js"></script>
+</body>
+</html>
